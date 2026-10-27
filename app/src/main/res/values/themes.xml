@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Jogoteca" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/cor_primaria</item>
+        <item name="colorPrimaryDark">@color/cor_primaria_escura</item>
+        <item name="colorAccent">@color/cor_destaque</item>
+        <item name="android:statusBarColor">@color/cor_primaria_escura</item>
+        <item name="android:navigationBarColor">@color/cor_primaria</item>
+        <item name="android:windowBackground">@color/cor_fundo</item>
+    </style>
+
+    <style name="Rotulo">
+        <item name="android:textColor">@color/cor_texto_suave</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="Campo">
+        <item name="android:background">@drawable/bg_campo</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cor_texto</item>
+        <item name="android:textColorHint">@color/cor_texto_suave</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="BotaoPrimario" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@color/cor_destaque</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="BotaoSecundario" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/cor_primaria</item>
+        <item name="strokeColor">@color/cor_destaque</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="BotaoTextoClaro" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/cor_texto_claro</item>
+    </style>
+</resources>

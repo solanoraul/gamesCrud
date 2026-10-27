@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor_fundo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cor_primaria"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/btnVoltar"
+            style="@style/BotaoTextoClaro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar" />
+
+        <TextView
+            android:id="@+id/txtTituloTela"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Novo jogo"
+            android:textColor="@color/cor_texto_claro"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/Rotulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Título" />
+
+            <EditText
+                android:id="@+id/editTitulo"
+                style="@style/Campo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do jogo"
+                android:inputType="textCapWords"
+                android:maxLength="80"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/Rotulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plataforma" />
+
+            <Spinner
+                android:id="@+id/spinnerPlataforma"
+                style="@style/Campo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/Rotulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gênero" />
+
+            <Spinner
+                android:id="@+id/spinnerGenero"
+                style="@style/Campo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/Rotulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ano" />
+
+            <EditText
+                android:id="@+id/editAno"
+                style="@style/Campo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex.: 2019"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <TextView
+                style="@style/Rotulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status" />
+
+            <Spinner
+                android:id="@+id/spinnerStatus"
+                style="@style/Campo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/Rotulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nota" />
+
+            <EditText
+                android:id="@+id/editNota"
+                style="@style/Campo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="De 0 a 10"
+                android:inputType="numberDecimal"
+                android:maxLength="5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Obrigatória só quando o status é Zerado."
+                android:textColor="@color/cor_texto_suave"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Rotulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comentário" />
+
+            <EditText
+                android:id="@+id/editComentario"
+                style="@style/Campo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="Opcional"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="200"
+                android:minLines="3" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnExcluir"
+            style="@style/BotaoSecundario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Excluir"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            style="@style/BotaoPrimario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Salvar" />
+    </LinearLayout>
+
+</LinearLayout>
